@@ -9,4 +9,12 @@ library Schema {
     struct $CounterState {
         uint256 number;
     }
+
+    /// @custom:storage-location erc7201:VeTokenFactory.VeTokenInfo
+    struct $VeTokenInfo {
+        address tokenAddr; // Address of the original token.
+        string name; // Name of the veToken.
+        string symbol; // Symbol of the veToken.
+        address veTokenAddr; // Address of the veToken.
+    }
 }
